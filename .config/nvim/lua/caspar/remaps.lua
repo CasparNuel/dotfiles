@@ -1,0 +1,5 @@
+vim.keymap.set("n", "<leader>qf", function() vim.lsp.buf.code_action() end)
+vim.keymap.set("n", "<leader>th" , function()
+  vim.cmd('vertical terminal zsh')
+  vim.cmd('startinsert')
+end)
