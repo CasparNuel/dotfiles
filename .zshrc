@@ -16,6 +16,6 @@ PATH=$PATH:/opt/flutter/bin
 LD_LIBRARY_PATH=/opt/openMotif-i386/usr/X11R6/lib/:$LD_LIBRARY_PATH
 
 alias rm="rm -I"
+alias config="/usr/bin/git --git-dir=/home/caspar/.cfg/ --work-tree=/home/caspar"
 
 source /usr/share/nvm/init-nvm.sh
-alias config='usr/bin/git --git-dir=/home/caspar/.cfg/ --work-tree=/home/caspar'
