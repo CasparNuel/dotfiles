@@ -48,6 +48,11 @@ vim.g.maplocalleader = " "
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- Relative line numbers
+vim.opt.relativenumber = true
+
+vim.opt.scrolloff = 1000
+
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
