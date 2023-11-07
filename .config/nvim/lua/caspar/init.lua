@@ -495,7 +495,7 @@ require('which-key').register({
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-  -- clangd = {},
+  clangd = { cmds = {"clangd", "--header-insertion=never"} },
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
@@ -531,6 +531,7 @@ mason_lspconfig.setup_handlers {
       on_attach = on_attach,
       settings = servers[server_name],
       filetypes = (servers[server_name] or {}).filetypes,
+      cmd = (servers[server_name] or {}).cmds,
     }
   end
 }
