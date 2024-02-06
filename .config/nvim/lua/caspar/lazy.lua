@@ -47,4 +47,6 @@ require("lazy").setup({
 	},
 
 	{"catppuccin/nvim"},
+
+	{"ribelo/taskwarrior.nvim"},
 })
