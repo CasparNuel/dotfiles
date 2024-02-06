@@ -10,3 +10,4 @@ lspconf.typst_lsp.setup({
 		exportPdf = "never"
 	}
 })
+lspconf.tsserver.setup({})
