@@ -11,3 +11,4 @@ lspconf.typst_lsp.setup({
 	}
 })
 lspconf.tsserver.setup({})
+lspconf.jdtls.setup({})
