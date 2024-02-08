@@ -12,3 +12,4 @@ lspconf.typst_lsp.setup({
 })
 lspconf.tsserver.setup({})
 lspconf.jdtls.setup({})
+lspconf.csharp_ls.setup({})

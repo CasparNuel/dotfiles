@@ -51,4 +51,10 @@ require("lazy").setup({
 	{"ray-x/lsp_signature.nvim", event = "VeryLazy"},
 
 	{"windwp/nvim-autopairs", event = "InsertEnter"},
+
+	{"nvim-telescope/telescope.nvim", tag = "0.1.5", -- or, branch = '0.1.x',
+		dependencies = {
+			{"nvim-lua/plenary.nvim"}
+		}
+	},
 })
