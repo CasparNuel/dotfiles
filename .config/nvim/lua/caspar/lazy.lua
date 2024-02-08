@@ -49,4 +49,6 @@ require("lazy").setup({
 	{"catppuccin/nvim"},
 
 	{"ray-x/lsp_signature.nvim", event = "VeryLazy"},
+
+	{"windwp/nvim-autopairs", event = "InsertEnter"},
 })
