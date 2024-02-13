@@ -1,5 +1,6 @@
-vim.wo.relativenumber = true
-vim.o.hlsearch = false
+vim.opt.relativenumber = true
+vim.opt.hlsearch = false
+vim.opt.number = true
 
 require("caspar.remap")
 require("caspar.filetype")
