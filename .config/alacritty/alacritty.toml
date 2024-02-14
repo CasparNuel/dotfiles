@@ -1,0 +1,8 @@
+[window]
+opacity = 0.85
+decorations = "Full"
+startup_mode = "Maximized"
+
+[font]
+normal = { family = "MesloLGS NF", style = "Regular" }
+size = 9.5
