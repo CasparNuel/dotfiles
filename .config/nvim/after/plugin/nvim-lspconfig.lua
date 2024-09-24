@@ -4,15 +4,19 @@ lspconf.clangd.setup({})
 lspconf.rust_analyzer.setup({})
 lspconf.pylsp.setup({})
 lspconf.lua_ls.setup({})
-lspconf.typst_lsp.setup({
-	filetypes = {"typst", "typ"},
-	settings = {
-		exportPdf = "never"
-	}
-})
-lspconf.tsserver.setup({})
+lspconf.ts_ls.setup({})
 lspconf.jdtls.setup({})
 lspconf.csharp_ls.setup({})
+lspconf.tinymist.setup({
+	filetypes = {"typst", "typ"},
+	single_file_support = true,
+	root_dir = function()
+		return vim.fn.getcwd()
+	end,
+	settings = {
+		-- Currently none
+	}
+})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

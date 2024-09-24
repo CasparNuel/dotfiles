@@ -39,8 +39,6 @@ require("lazy").setup({
 
 	{"lervag/vimtex"},
 
-	{"kaarmu/typst.vim"},
-
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" }
