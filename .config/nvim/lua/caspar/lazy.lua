@@ -57,4 +57,6 @@ require("lazy").setup({
 	},
 
 	{"mfussenegger/nvim-dap"},
+
+	{"folke/zen-mode.nvim"},
 })
