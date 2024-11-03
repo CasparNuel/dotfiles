@@ -59,4 +59,6 @@ require("lazy").setup({
 	{"mfussenegger/nvim-dap"},
 
 	{"folke/zen-mode.nvim"},
+
+	{"airblade/vim-gitgutter"},
 })
