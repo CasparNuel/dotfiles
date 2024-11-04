@@ -60,5 +60,6 @@ require("lazy").setup({
 
 	{"folke/zen-mode.nvim"},
 
-	{"airblade/vim-gitgutter"},
+	{"lewis6991/gitsigns.nvim"}
+
 })
