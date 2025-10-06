@@ -1,22 +1,14 @@
-local lspconf = require("lspconfig")
-
-lspconf.clangd.setup({})
-lspconf.rust_analyzer.setup({})
-lspconf.pylsp.setup({})
-lspconf.lua_ls.setup({})
-lspconf.ts_ls.setup({})
-lspconf.jdtls.setup({})
-lspconf.csharp_ls.setup({})
-lspconf.tinymist.setup({
-	filetypes = {"typst", "typ"},
-	single_file_support = true,
-	root_dir = function()
-		return vim.fn.getcwd()
-	end,
-	settings = {
-		-- Currently none
-	}
-})
+vim.lsp.enable('clangd')
+vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('pylsp')
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable('jdtls')
+vim.lsp.enable('csharp_ls')
+vim.lsp.config['tinymist'] = {
+	filetypes = {'typ', 'typst'} -- .typ
+}
+vim.lsp.enable('tinymist')
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
