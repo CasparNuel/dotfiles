@@ -1,3 +1,9 @@
+vim.lsp.config['clangd'] = {
+	cmd = {
+		'clangd',
+		'--header-insertion=never'
+	}
+}
 vim.lsp.enable('clangd')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('pylsp')
@@ -9,6 +15,7 @@ vim.lsp.config['tinymist'] = {
 	filetypes = {'typ', 'typst'} -- .typ
 }
 vim.lsp.enable('tinymist')
+vim.lsp.enable('cmake')
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

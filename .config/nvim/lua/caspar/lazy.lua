@@ -60,6 +60,16 @@ require("lazy").setup({
 
 	{"folke/zen-mode.nvim"},
 
-	{"lewis6991/gitsigns.nvim"}
+	{"lewis6991/gitsigns.nvim"},
+
+	{"Civitasv/cmake-tools.nvim",
+		dependencies = {
+			{"nvim-lua/plenary.nvim"}
+		}
+	},
+
+	{"danymat/neogen"},
+
+	{"chomosuke/typst-preview.nvim", version = "1.*"}
 
 })
