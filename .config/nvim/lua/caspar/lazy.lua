@@ -31,7 +31,6 @@ require("lazy").setup({
 
 	{"mbbill/undotree"},
 
-	{"VonHeikemen/lsp-zero.nvim", branch = "v3.x"},
 	{"neovim/nvim-lspconfig"},
 	{"hrsh7th/cmp-nvim-lsp"},
 	{"hrsh7th/nvim-cmp"},
@@ -70,6 +69,8 @@ require("lazy").setup({
 
 	{"danymat/neogen"},
 
-	{"chomosuke/typst-preview.nvim", version = "1.*"}
+	{"chomosuke/typst-preview.nvim", version = "1.*"},
+
+	{ 'RaafatTurki/hex.nvim' }
 
 })

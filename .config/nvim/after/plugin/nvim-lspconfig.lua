@@ -16,6 +16,7 @@ vim.lsp.config['tinymist'] = {
 }
 vim.lsp.enable('tinymist')
 vim.lsp.enable('cmake')
+vim.lsp.enable('gopls')
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
