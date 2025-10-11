@@ -71,6 +71,10 @@ require("lazy").setup({
 
 	{"chomosuke/typst-preview.nvim", version = "1.*"},
 
-	{ 'RaafatTurki/hex.nvim' }
+	{"RaafatTurki/hex.nvim"},
+
+	{"folke/todo-comments.nvim",
+  		dependencies = { "nvim-lua/plenary.nvim" }
+	}
 
 })
