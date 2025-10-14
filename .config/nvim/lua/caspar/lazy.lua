@@ -75,6 +75,8 @@ require("lazy").setup({
 
 	{"folke/todo-comments.nvim",
   		dependencies = { "nvim-lua/plenary.nvim" }
-	}
+	},
+
+	{"OXY2DEV/markview.nvim", lazy = false}
 
 })
