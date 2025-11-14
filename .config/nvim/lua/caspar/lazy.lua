@@ -77,6 +77,8 @@ require("lazy").setup({
   		dependencies = { "nvim-lua/plenary.nvim" }
 	},
 
-	{"OXY2DEV/markview.nvim", lazy = false}
+	{"OXY2DEV/markview.nvim", lazy = false},
+
+	{"RRethy/vim-illuminate"}
 
 })
