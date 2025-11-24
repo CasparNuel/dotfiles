@@ -43,7 +43,7 @@ require("lazy").setup({
 		dependencies = { "nvim-tree/nvim-web-devicons" }
 	},
 
-	{"catppuccin/nvim"},
+	{"EdenEast/nightfox.nvim"},
 
 	{"ray-x/lsp_signature.nvim", event = "VeryLazy"},
 
