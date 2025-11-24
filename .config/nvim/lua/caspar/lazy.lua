@@ -12,77 +12,93 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{"folke/which-key.nvim"},
+	{ "folke/which-key.nvim" },
 
 	{
 		"nvim-tree/nvim-tree.lua",
 		lazy = false,
 		dependencies = {
-		"nvim-tree/nvim-web-devicons"
+			"nvim-tree/nvim-web-devicons"
 		}
 	},
 
-	{"akinsho/toggleterm.nvim"},
+	{ "akinsho/toggleterm.nvim" },
 
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate"
 	},
 
-	{"mbbill/undotree"},
+	{ "mbbill/undotree" },
 
-	{"neovim/nvim-lspconfig"},
-	{"hrsh7th/cmp-nvim-lsp"},
-	{"hrsh7th/nvim-cmp"},
-	{"L3MON4D3/LuaSnip"},
+	{ "neovim/nvim-lspconfig" },
+	{ "hrsh7th/cmp-nvim-lsp" },
+	{ "hrsh7th/nvim-cmp" },
+	{ "L3MON4D3/LuaSnip" },
 
-	{"lervag/vimtex"},
+	{ "lervag/vimtex" },
 
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" }
 	},
 
-	{"EdenEast/nightfox.nvim"},
+	{ "EdenEast/nightfox.nvim" },
 
-	{"ray-x/lsp_signature.nvim", event = "VeryLazy"},
+	{ "ray-x/lsp_signature.nvim", event = "VeryLazy" },
 
-	{"windwp/nvim-autopairs", event = "InsertEnter"},
+	{ "windwp/nvim-autopairs",    event = "InsertEnter" },
 
-	{"nvim-telescope/telescope.nvim", tag = "0.1.5", -- or, branch = '0.1.x',
+	{
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.5",                    -- or, branch = '0.1.x',
 		dependencies = {
-			{"nvim-lua/plenary.nvim"}
+			{ "nvim-lua/plenary.nvim" }
 		}
 	},
 
-	{"mfussenegger/nvim-dap"},
+	{ "mfussenegger/nvim-dap" },
 
-	{"folke/zen-mode.nvim"},
+	{ "folke/zen-mode.nvim" },
 
-	{"lewis6991/gitsigns.nvim"},
+	{ "lewis6991/gitsigns.nvim" },
 
-	{"Civitasv/cmake-tools.nvim",
+	{
+		"Civitasv/cmake-tools.nvim",
 		dependencies = {
-			{"nvim-lua/plenary.nvim"}
+			{ "nvim-lua/plenary.nvim" }
 		}
 	},
 
-	{"danymat/neogen"},
+	{ "danymat/neogen" },
 
-	{"chomosuke/typst-preview.nvim", version = "1.*"},
+	{ "chomosuke/typst-preview.nvim", version = "1.*" },
 
-	{"RaafatTurki/hex.nvim"},
+	{ "RaafatTurki/hex.nvim" },
 
-	{"folke/todo-comments.nvim",
-  		dependencies = { "nvim-lua/plenary.nvim" }
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" }
 	},
 
-	{"OXY2DEV/markview.nvim", lazy = false},
+	{ "OXY2DEV/markview.nvim", lazy = false },
 
-	{"RRethy/vim-illuminate"},
+	{ "RRethy/vim-illuminate" },
 
-	{"Wansmer/symbol-usage.nvim",
-  		event = "LspAttach", -- need run before LspAttach if you use nvim 0.9. On 0.10 use 'LspAttach'
-	}
+	{
+		"Wansmer/symbol-usage.nvim",
+		event = "LspAttach", -- need run before LspAttach if you use nvim 0.9. On 0.10 use 'LspAttach'
+	},
+
+	-- lazy.nvim
+	{
+		"chrisgrieser/nvim-origami",
+		event = "VeryLazy",
+		-- recommended: disable vim's auto-folding
+		init = function()
+			vim.opt.foldlevel = 99
+			vim.opt.foldlevelstart = 99
+		end,
+	},
 
 })
