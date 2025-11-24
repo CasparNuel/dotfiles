@@ -90,15 +90,4 @@ require("lazy").setup({
 		event = "LspAttach", -- need run before LspAttach if you use nvim 0.9. On 0.10 use 'LspAttach'
 	},
 
-	-- lazy.nvim
-	{
-		"chrisgrieser/nvim-origami",
-		event = "VeryLazy",
-		-- recommended: disable vim's auto-folding
-		init = function()
-			vim.opt.foldlevel = 99
-			vim.opt.foldlevelstart = 99
-		end,
-	},
-
 })
