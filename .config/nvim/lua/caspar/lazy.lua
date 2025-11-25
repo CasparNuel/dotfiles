@@ -51,7 +51,7 @@ require("lazy").setup({
 
 	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.5",                    -- or, branch = '0.1.x',
+		tag = "0.1.5", -- or, branch = '0.1.x',
 		dependencies = {
 			{ "nvim-lua/plenary.nvim" }
 		}
@@ -89,5 +89,24 @@ require("lazy").setup({
 		"Wansmer/symbol-usage.nvim",
 		event = "LspAttach", -- need run before LspAttach if you use nvim 0.9. On 0.10 use 'LspAttach'
 	},
+
+	{
+		"chrisgrieser/nvim-origami",
+		event = "VeryLazy",
+		opts = {
+			-- Disable LSP folding, some LSPs have erratic behaviour when the file contains errors
+			useLspFoldsWithTreesitterFallback = false,
+			foldtext = {
+				padding = 5,
+				lineCount = { template = "%d folded" },
+			},
+			autoFold = {
+				enabled = false
+			},
+			foldKeymaps = {
+				setup = false
+			}
+		},
+	}
 
 })
