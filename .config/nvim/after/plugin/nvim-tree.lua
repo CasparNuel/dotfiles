@@ -1,5 +1,8 @@
 require("nvim-tree").setup({
-	-- Use defaults (empty)
+	-- Extend Git Integration Timeout (ms)
+	git = {
+		timeout = 1000
+	}
 })
 
 -- Remaps:

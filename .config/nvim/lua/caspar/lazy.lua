@@ -95,9 +95,13 @@ require("lazy").setup({
 		event = "VeryLazy",
 		opts = {
 			-- Disable LSP folding, some LSPs have erratic behaviour when the file contains errors
-			useLspFoldsWithTreesitterFallback = false,
+			useLspFoldsWithTreesitterFallback = {
+				enabled = false
+			},
 			foldtext = {
-				padding = 5,
+				padding = {
+					width = 5
+				},
 				lineCount = { template = "%d folded" },
 			},
 			autoFold = {
