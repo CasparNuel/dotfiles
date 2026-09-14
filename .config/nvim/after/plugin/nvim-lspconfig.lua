@@ -15,6 +15,9 @@ vim.lsp.config['tinymist'] = {
 	filetypes = {'typ', 'typst'} -- .typ
 }
 vim.lsp.enable('tinymist')
+vim.lsp.config['cmake'] = {
+	cmd = { 'neocmakelsp', 'stdio' }
+}
 vim.lsp.enable('cmake')
 vim.lsp.enable('gopls')
 
